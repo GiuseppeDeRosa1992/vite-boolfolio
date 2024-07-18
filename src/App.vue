@@ -4,7 +4,9 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      messaggio: "ciao sono Giuseppe"
+      messaggio: "ciao sono Giuseppe",
+
+      api_url: "http://127.0.0.1:8000",
     }
   },
 
@@ -13,7 +15,9 @@ export default {
   },
 
   mounted() {
-
+    axios.get(`${this.api_url}/api/projects`).then(result => {
+      console.log(result); //la api funziona
+    })
   },
 };
 </script>

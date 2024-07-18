@@ -1,5 +1,17 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      messaggio: "ciao sono Giuseppe"
+    }
+  },
+
+  methods() {
+
+  },
+};
 </script>
 
 <template>
@@ -10,8 +22,9 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <h1>{{ messaggio }}</h1>
   </div>
-  <HelloWorld msg="Ciao sono Giuseppe" />
+
 </template>
 
 <style scoped>

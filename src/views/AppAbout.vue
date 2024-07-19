@@ -5,7 +5,7 @@ export default {
 
     data() {
         return {
-
+            title: "Ciao questa è la about"
         }
     },
 };
@@ -13,7 +13,9 @@ export default {
 </script>
 
 <template>
-
+    <section>
+        <h1 class="text-white">{{ title }}</h1>
+    </section>
 </template>
 
 <style scoped></style>

@@ -1,4 +1,7 @@
 <script>
+import store from '../data/store.js';
+import axios from 'axios';
+
 export default {
 
     name: "ProjectCard",
@@ -9,6 +12,16 @@ export default {
     data() {
         return {
             msg: "I miei Progetti",
+            store,
+        }
+    },
+
+    methods: {
+        //FUNZIONE CAMBIA PAGINA CON CHIAMATA AXIOS
+        changePage(api_url) {
+            axios.get(api_url).then((result) => {
+                this.store.projects = result.data.projects;
+            });
         }
     },
 };
@@ -16,27 +29,61 @@ export default {
 </script>
 
 <template>
-    <h1 class="text-white">{{ msg }}</h1>
-    <div class="row text-white">
-        <!-- FACCIO CICLO FOR E CICLO NELLA PROPS CHE POI LA POPOLO IN APP.VUE QUANDO LA RICHIAMO -->
-        <template v-for="project in cardProjects">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-3">
-                <div class="card p-0 h-100">
-                    <figure class="m-0 h-100">
-                        <img :src="api_url + '/storage/' + project.img_preview"
-                            class="card-img-top img-fluid object-fit-cover" :alt="project.img_preview"
-                            style="height: 30rem;">
-                        <h5 class="card-text my-fs py-2">{{ project.title }}</h5>
-                        <p class="card-text my-fs py-2">{{ project.description }}</p>
-                        <p class="card-text my-fs py-2">{{ project.type.name }}</p>
-                        <h5>Linguaggi Usati:</h5>
-                        <p v-for="language in project.languages">
-                            <i :class="language.icon">{{ language.name }}</i>
-                        </p>
-                    </figure>
+    <div class="container py-2">
+        <h1 class="text-white text-center">{{ msg }}</h1>
+
+
+        <!-- BARRA PER CAMBIARE PAGINA -->
+        <div class="text-center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center m-0">
+                    <!-- CICLO DENTRO LA API PROJECTS ALLA VOCE LINKS DOVE CI SONO LE MIE PAGINE CON DENREO I PROGETTI E POI DO LA CLASSE DISABILITA SE è DIVERSO DA LINK.URL-->
+                    <li v-for="link in store.projects.links" class="page-item"
+                        :class="{ disabled: !link.url, active: link.active }">
+                        <!-- CON IL METODO @CLICK RICHIAMO LA FUNZIONE CAMBIA PAGINA E GLI DO IL LINK.URL CHE è DOVE STA IL MIO URL PER LE PAGINE -->
+                        <button class="page-link" @click="changePage(link.url)" v-html="link.label"></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="row text-white text-center">
+            <!-- FACCIO CICLO FOR E CICLO NELLA PROPS CHE POI LA POPOLO IN APP.VUE QUANDO LA RICHIAMO -->
+            <template v-for="project in cardProjects">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-3">
+                    <div class="card p-0 h-100">
+                        <figure class="m-0 h-100">
+                            <img :src="api_url + '/storage/' + project.img_preview"
+                                class="card-img-top img-fluid object-fit-contain" :alt="project.img_preview"
+                                style="height: 20rem;">
+                            <h5 class="card-text my-fs py-2">{{ project.title }}</h5>
+                            <p class="card-text my-fs py-2">{{ project.description }}</p>
+                            <p class="card-text my-fs py-2">{{ project.type.name }}</p>
+                            <h5>Linguaggi Usati:</h5>
+                            <p v-for="language in project.languages">
+                                <i :class="language.icon">{{ language.name }}</i>
+                            </p>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-        </template>
+            </template>
+        </div>
+
+
+        <!-- BARRA PER CAMBIARE PAGINA -->
+        <div class="text-center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center m-0">
+                    <!-- CICLO DENTRO LA API PROJECTS ALLA VOCE LINKS DOVE CI SONO LE MIE PAGINE CON DENREO I PROGETTI E POI DO LA CLASSE DISABILITA SE è DIVERSO DA LINK.URL-->
+                    <li v-for="link in store.projects.links" class="page-item"
+                        :class="{ disabled: !link.url, active: link.active }">
+                        <!-- CON IL METODO @CLICK RICHIAMO LA FUNZIONE CAMBIA PAGINA E GLI DO IL LINK.URL CHE è DOVE STA IL MIO URL PER LE PAGINE -->
+                        <button class="page-link" @click="changePage(link.url)" v-html="link.label"></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </template>
 

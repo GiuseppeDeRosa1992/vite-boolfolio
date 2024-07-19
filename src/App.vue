@@ -1,9 +1,8 @@
 <script>
 import axios from 'axios';
 import store from './data/store.js'
-import ProjectCard from './components/ProjectCard.vue';
+import { RouterView } from 'vue-router';
 import AppHeader from './components/AppHeader.vue';
-import AppFooter from './components/AppFooter.vue';
 
 
 export default {
@@ -12,8 +11,6 @@ export default {
 
   components: {
     AppHeader,
-    ProjectCard,
-    AppFooter,
   },
 
   data() {
@@ -35,13 +32,9 @@ export default {
 </script>
 
 <template>
-
   <AppHeader />
 
-  <!-- RICHIAMO LE CARD DEI PROGETTI E TRAMITE LE PROPS GLI PASSO LA API CHE MI SERVE -->
-  <ProjectCard :cardProjects="store.projects.data" :api_url="store.api_url" />
-
-  <AppFooter />
+  <router-view></router-view>
 
 </template>
 

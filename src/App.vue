@@ -49,7 +49,7 @@ export default {
       <!-- CICLO DENTRO LA API PROJECTS ALLA VOCE LINKS DOVE CI SONO LE MIE PAGINE CON DENREO I PROGETTI E POI DO LA CLASSE DISABILITA SE è DIVERSO DA LINK.URL-->
       <li v-for="link in projects.links" class="page-item" :class="{ disabled: !link.url, active: link.active }">
         <!-- CON IL METODO @CLICK RICHIAMO LA FUNZIONE CAMBIA PAGINA E GLI DO IL LINK.URL CHE è DOVE STA IL MIO URL PER LE PAGINE -->
-        <a href="#" class="page-link" @click="changePage(link.url)" v-html="link.label"></a>
+        <button class="page-link" @click="changePage(link.url)" v-html="link.label"></button>
       </li>
     </ul>
   </nav>
@@ -64,7 +64,7 @@ export default {
       <!-- CICLO DENTRO LA API PROJECTS ALLA VOCE LINKS DOVE CI SONO LE MIE PAGINE CON DENREO I PROGETTI E POI DO LA CLASSE DISABILITA SE è DIVERSO DA LINK.URL-->
       <li v-for="link in projects.links" class="page-item" :class="{ disabled: !link.url, active: link.active }">
         <!-- CON IL METODO @CLICK RICHIAMO LA FUNZIONE CAMBIA PAGINA E GLI DO IL LINK.URL CHE è DOVE STA IL MIO URL PER LE PAGINE -->
-        <a href="#" class="page-link" @click="changePage(link.url)" v-html="link.label"></a>
+        <button class="page-link" @click="changePage(link.url)" v-html="link.label"></button>
       </li>
     </ul>
   </nav>

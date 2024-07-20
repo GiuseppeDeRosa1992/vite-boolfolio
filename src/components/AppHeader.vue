@@ -47,9 +47,9 @@ export default {
 
         <section>
             <ul class="row m-0 p-0">
-                <li v-for="(item, index) in store.arrayLink" :key="index" class="col-3 bg-white">
-                    <router-link :to="{ name: item }" class="nav-link text-center">
-                        {{ item }}
+                <li v-for="(route, index) in store.arrayLink" :key="index" class="col-3 bg-white">
+                    <router-link :to="{ name: route }" class="nav-link text-center py-2">
+                        {{ route }}
                     </router-link>
                 </li>
             </ul>

@@ -14,7 +14,7 @@ export default {
 
     data() {
         return {
-            title: "Ciao questa è la projects",
+            // title: "Ciao questa è la projects",
             store,
         }
     },
@@ -24,7 +24,7 @@ export default {
 
 <template>
     <section>
-        <h1 class="text-white">{{ title }}</h1>
+        <!-- <h1 class="text-white">{{ title }}</h1> -->
         <!-- RICHIAMO LE CARD DEI PROGETTI E TRAMITE LE PROPS GLI PASSO LA API CHE MI SERVE -->
         <ProjectCard :cardProjects="store.projects.data" :api_url="store.api_url" />
     </section>

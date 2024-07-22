@@ -43,8 +43,12 @@ export default {
                     <figure class="m-0 h-100">
                         <img :src="store.api_url + '/storage/' + project.img_preview"
                             class="card-img-top img-fluid object-fit-contain" alt="" style="height: 15rem;">
-                        <h5 class="card-text my-fs py-2">{{ project.title }}</h5>
                     </figure>
+                    <h5 class="card-text my-fs py-2">{{ project.title }}</h5>
+                    <!-- importo il link per vedere i dettagli anche sui progetti nella home -->
+                    <router-link :to="{ name: 'project', params: { slug: project.slug } }"
+                        class="btn btn-outline-success w-50">Vedi di
+                        più</router-link>
                 </div>
             </div>
         </template>

@@ -69,7 +69,7 @@ export default {
                                 <i :class="language.icon">{{ language.name }}</i>
                             </div>
                         </div>
-                        <router-link :to="{ name: 'project', params: { id: project.id } }"
+                        <router-link :to="{ name: 'project', params: { slug: project.slug } }"
                             class="btn btn-outline-success w-50">Vedi di
                             più</router-link>
                     </div>

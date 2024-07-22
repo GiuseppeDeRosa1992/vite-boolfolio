@@ -13,7 +13,7 @@ export default {
 
 
     mounted() {
-        axios.get(`${this.store.api_url}${this.store.projectId}${this.$route.params.id}`).then(result => {
+        axios.get(`${this.store.api_url}${this.store.projectId}${this.$route.params.slug}`).then(result => {
             //creo if che se il progetto ce me lo restituisce sennò da pagina non trovata
             if (result.data.success) {
                 this.store.singleProject = result.data.project

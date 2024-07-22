@@ -35,7 +35,7 @@ const router = createRouter({
             component: AppContacts
         },
         {
-            path: "/project/:id",
+            path: "/project/:slug",
             name: "project",
             component: AppSingleProject
         },

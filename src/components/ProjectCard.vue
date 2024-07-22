@@ -55,7 +55,7 @@ export default {
             <template v-for="project in cardProjects">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100">
-                        <figure class="m-0 h-100">
+                        <figure class="m-0">
                             <img :src="api_url + '/storage/' + project.img_preview"
                                 class="card-img-top img-fluid object-fit-contain" :alt="project.img_preview"
                                 style="height: 15rem;">
@@ -69,9 +69,11 @@ export default {
                                 <i :class="language.icon">{{ language.name }}</i>
                             </div>
                         </div>
-                        <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                            class="btn btn-outline-success w-50">Vedi di
-                            più</router-link>
+                        <div class="text-center py-2">
+                            <router-link :to="{ name: 'project', params: { slug: project.slug } }"
+                                class="btn btn-outline-success w-50">Vedi di
+                                più</router-link>
+                        </div>
                     </div>
                 </div>
             </template>

@@ -1,7 +1,6 @@
 <script>
 import axios from 'axios';
-import store from './data/store.js'
-import { RouterView } from 'vue-router';
+import store from './data/store.js';
 import AppHeader from './components/AppHeader.vue';
 
 

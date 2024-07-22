@@ -37,6 +37,12 @@ export default {
                     <h5 class="m-0 py-1">Lingue Parlate</h5>
                     <p class="m-0 py-1">Italiano, Tedesco, Inglese</p>
                 </div>
+                <div class="col-4">
+                    <h5 class="m-0 py-1">E-mail Personale</h5>
+                    <a href="#mail">
+                        <p class="m-0 py-1">derosagiuseppe1092@gmail.com</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

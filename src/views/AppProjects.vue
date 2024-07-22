@@ -1,6 +1,7 @@
 <script>
 import ProjectCard from '../components/ProjectCard.vue';
 import store from '../data/store.js';
+import axios from 'axios';
 
 export default {
 
@@ -17,6 +18,14 @@ export default {
             // title: "Ciao questa è la projects",
             store,
         }
+    },
+
+    mounted() {
+        //POPOLO TRAMITE CHIAMATA AXIOS LA VARIABILE PROJECTS
+        axios.get(`${this.store.api_url}/api/projects`).then(result => {
+
+            this.store.projects = result.data.projects
+        })
     },
 };
 

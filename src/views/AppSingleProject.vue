@@ -14,8 +14,12 @@ export default {
 
     mounted() {
         axios.get(`${this.store.api_url}${this.store.projectId}${this.$route.params.id}`).then(result => {
-
-            this.store.singleProject = result.data.project
+            //creo if che se il progetto ce me lo restituisce sennò da pagina non trovata
+            if (result.data.success) {
+                this.store.singleProject = result.data.project
+            } else {
+                this.$router.push({ name: 'not-found' })
+            }
         })
     }
 }

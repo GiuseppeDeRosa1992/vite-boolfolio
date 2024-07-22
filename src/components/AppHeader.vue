@@ -11,7 +11,6 @@ export default {
         return {
             string: "Giuseppe Port-Folio",
             store,
-            title: "Ciao questa è la home",
         }
     },
 };

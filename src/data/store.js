@@ -16,7 +16,7 @@ const iMieiDati = reactive({
     latest: "/api/projects/latest",
 
     //creo variabile per richiamare api per dettagli che mi passa l'id
-    projectId: "/api/project/"
+    projectId: "/api/projects/"
 });
 
 export default iMieiDati;

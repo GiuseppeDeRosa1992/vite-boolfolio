@@ -78,12 +78,6 @@ export default {
                         <div id="text-name" class="form-text"></div>
                     </div>
                     <div class="mb-3">
-                        <label for="surname" class="form-label">Cognome</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="text-surname"
-                            placeholder="Inserisci il Cognome">
-                        <div id="text-surname" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email"
                             placeholder="Inserisci Email">

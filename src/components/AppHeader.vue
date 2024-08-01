@@ -9,7 +9,6 @@ export default {
 
     data() {
         return {
-            string: "Giuseppe Port-Folio",
             store,
         }
     },
@@ -18,15 +17,8 @@ export default {
 </script>
 
 <template>
-    <header class="bg-white py-1">
+    <header class="py-3">
         <nav>
-
-
-            <h2 class="m-0 text-danger text-center py-3 fs-1">
-                {{ string }}
-            </h2>
-
-
             <!-- <div class="col-5"> -->
             <!-- BARRA PER CAMBIARE PAGINA -->
             <!-- <nav aria-label="Page navigation"> -->
@@ -40,23 +32,35 @@ export default {
             <!-- </ul> -->
             <!-- </nav> -->
             <!-- </div> -->
-
         </nav>
 
-        <section>
+        <nav>
             <ul class="row m-0 p-0">
-                <li v-for="(route, index) in store.arrayLink" :key="index" class="col-3 bg-white">
-                    <router-link :to="{ name: route }" class="nav-link text-center py-2">
+                <li v-for="(route, index) in store.arrayLink" :key="index" class="col-3">
+                    <router-link :to="{ name: route }" class="nav-link text-center py-3 fs-5">
                         {{ route }}
                     </router-link>
                 </li>
             </ul>
-        </section>
+        </nav>
     </header>
 </template>
 
 <style scoped>
+header {
+    background-color: aquamarine;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
 li {
     list-style-type: none;
+}
+
+li:hover {
+    color: white;
+    transform: scale(1.3);
+    transition: 0.3s linear;
 }
 </style>

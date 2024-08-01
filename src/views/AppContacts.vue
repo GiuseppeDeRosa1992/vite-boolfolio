@@ -47,7 +47,6 @@ export default {
 
                     this.loading = false;
                 })
-
         }
     }
 };
@@ -58,7 +57,7 @@ export default {
     <section>
         <div class="row m-0 justify-content-center text-white">
             <div class="col-6 p-0">
-                <h2 class="m-0 my-3 text-center">Contattami</h2>
+                <h1 class="m-0 my-3 text-center text-dark">Contattami</h1>
 
                 <template v-if="success">
                     <div class="alert alert-success" role="alert">
@@ -105,4 +104,13 @@ export default {
     </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+section {
+    padding-top: 6rem;
+}
+
+div>button:hover {
+    transform: scale(1.2);
+    transition: 0.5s linear;
+}
+</style>

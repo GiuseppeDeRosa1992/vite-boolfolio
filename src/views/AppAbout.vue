@@ -15,7 +15,8 @@ export default {
 <template>
     <section>
         <!-- <h1 class="text-white">{{ title }}</h1> -->
-        <div class="container text-white py-2">
+        <div class="container text-white">
+            <h1 class="m-0 py-2 text-dark">Chi Sono?</h1>
             <h2 class="m-0 text-center">I miei Dati</h2>
             <div class="row m-0 g-3 text-center justify-content-center">
                 <div class="col-6">
@@ -70,6 +71,18 @@ export default {
             </div>
         </div>
     </section>
+
+    <footer>
+
+    </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+section {
+    background-color: aquamarine;
+}
+
+div.container {
+    padding-top: 7rem;
+}
+</style>

@@ -13,25 +13,25 @@ const router = createRouter({
     routes: [
         {
             path: "/",
-            name: "home",
+            name: "Home",
             component: AppHome
         },
 
         {
             path: "/about",
-            name: "about",
+            name: "Su di me",
             component: AppAbout
         },
 
         {
             path: "/projects",
-            name: "projects",
+            name: "Progetti",
             component: AppProjects
         },
 
         {
             path: "/contacts",
-            name: "contacts",
+            name: "Contattami",
             component: AppContacts
         },
         {

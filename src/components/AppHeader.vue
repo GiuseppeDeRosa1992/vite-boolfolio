@@ -36,7 +36,7 @@ export default {
 
         <nav>
             <ul class="row m-0 p-0">
-                <li v-for="(route, index) in store.arrayLink" :key="index" class="col-3">
+                <li v-for="(route, index) in store.arrayLink" :key="index" class="col-6 col-sm-3">
                     <router-link :to="{ name: route }" class="nav-link text-center py-3 fs-5">
                         {{ route }}
                     </router-link>
@@ -59,7 +59,6 @@ li {
 }
 
 li:hover {
-    color: white;
     transform: scale(1.3);
     transition: 0.3s linear;
 }

@@ -22,7 +22,7 @@ export default {
     <section class="profile pb-5">
         <div class="my-p">
             <div class="row m-0 align-items-center">
-                <div class="col-12 col-sm-12 col-md-4">
+                <div class="col-12 col-sm-12 col-md-5">
                     <img src="../assets/foto-cv.jpg" alt="foto-profilo" class="img-thumbnail">
                     <div class="text-center pt-3">
                         <i class="fa-regular fa-envelope fa-2xl" style="color: #3d3bc4;"></i>
@@ -38,7 +38,7 @@ export default {
                         <a href="https://github.com/GiuseppeDeRosa1992" class="px-2">Profilo Git Hub</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-8">
+                <div class="col-12 col-sm-12 col-md-7">
                     <h1 class="m-0 my-fs text-center pb-2">GIUSEPPE DE ROSA</h1>
                     <div class="my-bg text-center my-fs p-3">
                         <p class="p-0 m-0 py-2">
@@ -103,15 +103,55 @@ a:hover {
 }
 
 div.my-bg {
-    background-color: aqua;
+    background-color: white;
     border-radius: 20px;
 }
 
 h1.my-fs {
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 div.my-fs {
     font-size: 1.3rem;
+}
+
+@media all and (min-width:576px) and (max-width: 768px) {
+    section.profile {
+        background: linear-gradient(180deg, rgba(127, 255, 212, 1) 30%, rgba(33, 37, 41, 1) 33%);
+    }
+
+    h1.my-fs {
+        color: aquamarine;
+        font-size: 4.5rem;
+        padding: 0.5rem 0 0 0;
+    }
+}
+
+@media all and (max-width: 576px) {
+    section.profile {
+        background: linear-gradient(180deg, rgba(127, 255, 212, 1) 20%, rgba(33, 37, 41, 1) 23%);
+    }
+
+    h1.my-fs {
+        color: aquamarine;
+        font-size: 3.5rem;
+        padding: 0.5rem 0 0 0;
+    }
+}
+
+@media all and (max-width: 330px) {
+    section.profile {
+        background: linear-gradient(180deg, rgba(127, 255, 212, 1) 12%, rgba(33, 37, 41, 1) 15%);
+    }
+
+    h1.my-fs {
+        color: aquamarine;
+        font-size: 2.5rem;
+        padding: 0.5rem 0 0 0;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
 }
 </style>

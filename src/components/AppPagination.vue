@@ -47,4 +47,10 @@ export default {
     </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.active>.page-link {
+    background-color: aquamarine !important;
+    color: black !important;
+    border-color: aquamarine !important;
+}
+</style>

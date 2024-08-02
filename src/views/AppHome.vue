@@ -62,7 +62,7 @@ export default {
                             <div class="text-center py-2 transform">
                                 <!-- importo il link per vedere i dettagli anche sui progetti nella home -->
                                 <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                    class="btn btn-outline-success w-50">Vedi di
+                                    class="btn btn-outline-primary w-50">Vedi di
                                     più</router-link>
                             </div>
                         </div>

@@ -64,7 +64,7 @@ export default {
                         </div>
                         <div class="text-center py-2">
                             <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                class="btn btn-outline-success w-50">Vedi di
+                                class="btn btn-outline-primary w-50">Vedi di
                                 più</router-link>
                         </div>
                     </div>
@@ -81,12 +81,14 @@ div.container {
     padding-top: 6rem;
 }
 
-h1 {
-    color: rgb(244, 205, 157);
+div>small {
+    background-color: aquamarine;
+    border-radius: 10px;
 }
 
-div>small {
-    background-color: rgb(244, 205, 157);
-    border-radius: 10px;
+@media all and (max-width: 576px) {
+    h1 {
+        margin: 4rem 0 0 0 !important;
+    }
 }
 </style>

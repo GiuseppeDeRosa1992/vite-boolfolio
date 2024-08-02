@@ -56,7 +56,7 @@ export default {
 <template>
     <section>
         <div class="row m-0 justify-content-center text-white">
-            <div class="col-6 p-0">
+            <div class="col-10 col-sm-8 col-md-6 p-0">
                 <h1 class="m-0 my-3 text-center text-dark">Contattami</h1>
 
                 <template v-if="success">
@@ -112,5 +112,11 @@ section {
 div>button:hover {
     transform: scale(1.2);
     transition: 0.5s linear;
+}
+
+@media all and (max-width: 576px) {
+    h1 {
+        margin: 4rem 0 1rem 0 !important;
+    }
 }
 </style>

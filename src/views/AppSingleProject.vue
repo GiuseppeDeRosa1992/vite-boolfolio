@@ -54,4 +54,10 @@ export default {
 section {
     padding-top: 7rem;
 }
+
+@media all and (max-width: 576px) {
+    section {
+        padding-top: 10rem;
+    }
+}
 </style>

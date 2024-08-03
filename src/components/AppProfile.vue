@@ -1,12 +1,14 @@
 <script>
 
+import AppSkills from "../components/AppSkills.vue";
 import store from "../data/store.js";
 
 export default {
 
-    name: "AppSkills",
+    name: "AppProfile",
 
     components: {
+        AppSkills,
     },
 
     data() {
@@ -19,10 +21,10 @@ export default {
 </script>
 
 <template>
-    <section class="profile pb-5">
+    <section class="profile pb-4">
         <div class="my-p">
             <div class="row m-0 align-items-center">
-                <div class="col-12 col-sm-12 col-md-5">
+                <div class="col-12 col-sm-12 col-lg-3 p-0 ps-5 pe-3 py-3">
                     <img src="../assets/foto-cv.jpg" alt="foto-profilo" class="img-thumbnail">
                     <div class="text-center pt-3">
                         <i class="fa-regular fa-envelope fa-2xl" style="color: #3d3bc4;"></i>
@@ -38,9 +40,9 @@ export default {
                         <a href="https://github.com/GiuseppeDeRosa1992" class="px-2">Profilo Git Hub</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-7">
+                <div class="col-12 col-sm-12 col-lg-9 p-0 ps-3 pe-5 py-3">
                     <h1 class="m-0 my-fs text-center pb-2">GIUSEPPE DE ROSA</h1>
-                    <div class="my-bg text-center my-fs p-3">
+                    <div class="my-bg text-center my-fs px-4 py-5">
                         <p class="p-0 m-0 py-2">
                             👋 Ciao! Benvenuti nel mio Sito Portfolio! Sono Giuseppe e ho 32 anni e sono di
                             <i class="fa-solid fa-map-pin fa-lg" style="color: #e60000;"></i>
@@ -74,6 +76,8 @@ export default {
                             </a>
                         </p>
                     </div>
+                    <!-- SEZIONE COMPETENZE -->
+                    <AppSkills />
                 </div>
             </div>
         </div>
@@ -82,7 +86,7 @@ export default {
 
 <style scoped>
 section.profile {
-    background: linear-gradient(180deg, rgba(127, 255, 212, 1)50%, rgba(33, 37, 41, 1) 55%);
+    background: linear-gradient(180deg, rgba(194, 203, 160, 1)50%, rgba(33, 37, 41, 1) 55%);
 }
 
 div.my-p {
@@ -95,7 +99,7 @@ div>img {
 
 a {
     text-decoration: none;
-    color: aquamarine;
+    color: rgb(194, 203, 160);
 }
 
 a:hover {
@@ -112,16 +116,16 @@ h1.my-fs {
 }
 
 div.my-fs {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
-@media all and (min-width:576px) and (max-width: 768px) {
+@media all and (min-width:576px) and (max-width: 992px) {
     section.profile {
-        background: linear-gradient(180deg, rgba(127, 255, 212, 1) 30%, rgba(33, 37, 41, 1) 33%);
+        background: linear-gradient(180deg, rgba(194, 203, 160, 1) 30%, rgba(33, 37, 41, 1) 33%);
     }
 
     h1.my-fs {
-        color: aquamarine;
+        color: rgb(194, 203, 160);
         font-size: 4.5rem;
         padding: 0.5rem 0 0 0;
     }
@@ -129,23 +133,23 @@ div.my-fs {
 
 @media all and (max-width: 576px) {
     section.profile {
-        background: linear-gradient(180deg, rgba(127, 255, 212, 1) 20%, rgba(33, 37, 41, 1) 23%);
+        background: linear-gradient(180deg, rgba(194, 203, 160, 1) 20%, rgba(33, 37, 41, 1) 23%);
     }
 
     h1.my-fs {
-        color: aquamarine;
+        color: rgb(194, 203, 160);
         font-size: 3.5rem;
         padding: 0.5rem 0 0 0;
     }
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 450px) {
     section.profile {
-        background: linear-gradient(180deg, rgba(127, 255, 212, 1) 12%, rgba(33, 37, 41, 1) 15%);
+        background: linear-gradient(180deg, rgba(194, 203, 160, 1) 12%, rgba(33, 37, 41, 1) 15%);
     }
 
     h1.my-fs {
-        color: aquamarine;
+        color: rgb(194, 203, 160);
         font-size: 2.5rem;
         padding: 0.5rem 0 0 0;
     }

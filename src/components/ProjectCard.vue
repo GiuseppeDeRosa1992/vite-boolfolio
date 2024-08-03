@@ -57,14 +57,14 @@ export default {
                         <h6 class="card-text my-fs py-2 m-0">{{ project.type.name }}</h6>
                         <h5 class="m-0 py-2">Linguaggi Usati:</h5>
                         <div class="row m-0 justify-content-center">
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-1" v-for="language in project.languages">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1" v-for="language in project.languages">
                                 <i :class="language.icon"></i>
                                 <small class="m-0 py-2 d-block fs-6"><b>{{ language.name }}</b></small>
                             </div>
                         </div>
                         <div class="text-center py-2">
                             <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                class="btn btn-outline-primary w-50">Vedi di
+                                class="btn my-btn-outline w-50">Vedi di
                                 più</router-link>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ div.container {
 }
 
 div>small {
-    background-color: aquamarine;
+    background-color: rgb(194, 203, 160);
     border-radius: 10px;
 }
 

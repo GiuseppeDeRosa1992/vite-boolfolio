@@ -44,7 +44,7 @@ export default {
 <style scoped>
 a {
     text-decoration: none;
-    color: aquamarine;
+    color: rgb(194, 203, 160);
 }
 
 a:hover {

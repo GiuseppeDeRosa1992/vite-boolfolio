@@ -49,8 +49,8 @@ export default {
 
 <style scoped>
 .active>.page-link {
-    background-color: aquamarine !important;
+    background-color: rgb(194, 203, 160) !important;
     color: black !important;
-    border-color: aquamarine !important;
+    border-color: rgb(194, 203, 160) !important;
 }
 </style>

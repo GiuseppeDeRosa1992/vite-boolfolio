@@ -2,7 +2,6 @@
 
 import store from "../data/store.js";
 import axios from "axios";
-import AppSkills from "../components/AppSkills.vue";
 import AppProfile from "../components/AppProfile.vue";
 import AppFooter from "../components/AppFooter.vue";
 
@@ -13,7 +12,6 @@ export default {
     name: "AppHome",
 
     components: {
-        AppSkills,
         AppProfile,
         AppFooter,
     },
@@ -41,9 +39,6 @@ export default {
     <!-- SEZIONE PROFILO -->
     <AppProfile />
 
-    <!-- SEZIONE COMPETENZE -->
-    <AppSkills />
-
     <!-- SEZIONE CON ALCUNI PROGETTI -->
     <section class="project">
         <div class="container">
@@ -62,7 +57,7 @@ export default {
                             <div class="text-center py-2 transform">
                                 <!-- importo il link per vedere i dettagli anche sui progetti nella home -->
                                 <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                    class="btn btn-outline-primary w-50">Vedi di
+                                    class="btn my-btn-outline w-50">Vedi di
                                     più</router-link>
                             </div>
                         </div>
@@ -82,7 +77,7 @@ section.project {
 }
 
 h2 {
-    color: aquamarine;
+    color: rgb(194, 203, 160);
 }
 
 div.transform:hover {

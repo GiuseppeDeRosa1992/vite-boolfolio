@@ -96,7 +96,7 @@ export default {
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                        <button type="submit" class="btn my-btn-outline">Invia Messaggio</button>
                     </div>
                 </form>
             </div>

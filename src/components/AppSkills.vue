@@ -20,12 +20,12 @@ export default {
 
 <template>
     <!-- SEZIONE COMPETENZE -->
-    <section class="skills">
+    <section class="skills pt-4">
         <div class="container">
             <h2 class="m-0 pb-3 fs-1">Competenze</h2>
             <div class="row m-0" v-if="store.skills">
                 <template v-for="skill in store.skills">
-                    <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 pb-5 pt-2 text-center">
+                    <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 pt-2 text-center">
                         <i :class=skill.icon :style=skill.style></i>
                         <h6 class="m-0 p-0 py-2">{{ skill.name }}</h6>
                     </div>
@@ -42,6 +42,6 @@ section.skills {
 
 h2,
 h6 {
-    color: aquamarine;
+    color: rgb(194, 203, 160);
 }
 </style>

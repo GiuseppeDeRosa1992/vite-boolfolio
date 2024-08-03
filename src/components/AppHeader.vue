@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 header {
-    background-color: aquamarine;
+    background-color: rgb(194, 203, 160);
     position: fixed;
     width: 100%;
     z-index: 999;

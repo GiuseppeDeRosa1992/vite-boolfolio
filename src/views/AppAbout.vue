@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 section {
-    background-color: aquamarine;
+    background-color: rgb(194, 203, 160);
 }
 
 div.container {

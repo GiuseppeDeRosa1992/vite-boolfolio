@@ -40,7 +40,8 @@ export default {
                     <h6 class="card-text my-fs py-2 m-0">{{ store.singleProject.type.name }}</h6>
                     <h5 class="m-0 py-2">Linguaggi Usati:</h5>
                     <div class="row m-0 justify-content-center">
-                        <div class="col-4 p-0 py-3" v-for="language in store.singleProject.languages">
+                        <div class="col-12 col-sm-3 col-md-2 p-0 py-3"
+                            v-for="language in store.singleProject.languages">
                             <i :class="language.icon">{{ language.name }}</i>
                         </div>
                     </div>

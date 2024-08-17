@@ -14,8 +14,26 @@ export default {
     },
 
     methods: {
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+            })
+        },
 
-    }
+    },
+
+    mounted() {
+        window.addEventListener("scroll", () => {
+            const scroll = document.getElementById("toTop");
+            if (window.scrollY > 200) {
+                scroll.classList.add("active")
+            } else {
+                scroll.classList.remove("active")
+            }
+        })
+    },
 };
 
 </script>
@@ -49,8 +67,8 @@ export default {
         </nav>
     </header>
 
-    <button class="btnScrollToTop p-0" type="button">
-        <a href="#"><i class="fa-solid fa-chevron-up fa-xl"></i></a>
+    <button id="toTop" class="btnScrollToTop p-0" type="button" @click="scrollToTop()">
+        <a><i class="fa-solid fa-chevron-up fa-xl"></i></a>
     </button>
 </template>
 
@@ -77,16 +95,26 @@ li:hover {
     height: 50px;
     bottom: 100px;
     right: 20px;
-    background-color: rgb(194, 203, 160);
-    border-color: rgb(194, 203, 160);
+    background-color: aquamarine;
+    border-color: aquamarine;
     border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1000;
 }
 
-.btnScrollToTop>a {
-    color: white;
-}
-
-.btnScrollToTop>a:hover {
+#toTop>a {
     color: black;
+}
+
+#toTop>a:hover {
+    color: rgb(194, 203, 160);
+}
+
+.btnScrollToTop.active {
+    bottom: 100px;
+    right: 20px;
+    opacity: 1;
+    z-index: 1000;
 }
 </style>

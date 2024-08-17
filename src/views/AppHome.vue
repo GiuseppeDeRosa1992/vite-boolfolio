@@ -4,6 +4,9 @@ import store from "../data/store.js";
 import axios from "axios";
 import AppProfile from "../components/AppProfile.vue";
 import AppFooter from "../components/AppFooter.vue";
+import AppExperience from "../components/AppExperience.vue";
+import AppTraining from "../components/AppTraining.vue";
+
 
 
 
@@ -14,6 +17,8 @@ export default {
     components: {
         AppProfile,
         AppFooter,
+        AppExperience,
+        AppTraining,
     },
 
     data() {
@@ -49,7 +54,6 @@ export default {
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                         <div class="card p-0 h-100">
                             <h3 class="card-text py-3 m-0 fs-2">{{ project.title }}</h3>
-
                             <figure class="m-0">
                                 <img :src="store.api_url + '/storage/' + project.img_preview"
                                     class="card-img-top img-fluid object-fit-contain" alt="" style="height: 15rem;">
@@ -66,6 +70,12 @@ export default {
             </div>
         </div>
     </section>
+
+    <!-- SEZIONE ESPERIENZE -->
+    <AppExperience />
+
+    <!-- SEZIONE FORMAZIONE -->
+    <AppTraining />
 
     <AppFooter />
 

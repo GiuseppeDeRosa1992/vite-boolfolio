@@ -12,12 +12,16 @@ export default {
             store,
         }
     },
+
+    methods: {
+
+    }
 };
 
 </script>
 
 <template>
-    <header class="py-3">
+    <header class="py-3" id="header">
         <nav>
             <!-- <div class="col-5"> -->
             <!-- BARRA PER CAMBIARE PAGINA -->
@@ -44,6 +48,10 @@ export default {
             </ul>
         </nav>
     </header>
+
+    <button class="btnScrollToTop p-0" type="button">
+        <a href="#"><i class="fa-solid fa-chevron-up fa-xl"></i></a>
+    </button>
 </template>
 
 <style scoped>
@@ -61,5 +69,24 @@ li {
 li:hover {
     transform: scale(1.3);
     transition: 0.3s linear;
+}
+
+.btnScrollToTop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+    right: 20px;
+    background-color: rgb(194, 203, 160);
+    border-color: rgb(194, 203, 160);
+    border-radius: 50%;
+}
+
+.btnScrollToTop>a {
+    color: white;
+}
+
+.btnScrollToTop>a:hover {
+    color: black;
 }
 </style>

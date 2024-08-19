@@ -62,11 +62,14 @@ export default {
                                 <small class="m-0 py-2 d-block fs-6"><b>{{ language.name }}</b></small>
                             </div>
                         </div>
-                        <div class="text-center py-2">
+                        <div class="text-center pt-2">
                             <router-link :to="{ name: 'project', params: { slug: project.slug } }"
                                 class="btn my-btn-outline w-50">Vedi di
                                 più</router-link>
                         </div>
+
+                        <a :href="project.link_git" target="_blank" rel="noopener noreferrer"
+                            class="py-2 my-color fs-5">Vai alla repository Git-Hub</a>
                     </div>
                 </div>
             </template>
@@ -84,6 +87,10 @@ div.container {
 div>small {
     background-color: rgb(194, 203, 160);
     border-radius: 10px;
+}
+
+.my-color {
+    color: rgb(194, 203, 160);
 }
 
 @media all and (max-width: 576px) {

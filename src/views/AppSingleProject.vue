@@ -46,6 +46,9 @@ export default {
                         </div>
                     </div>
                 </div>
+
+                <a :href="store.singleProject.link_git" target="_blank" rel="noopener noreferrer"
+                    class="py-2 my-color fs-5">Vai alla repository Git-Hub</a>
             </div>
         </div>
     </section>
@@ -54,6 +57,10 @@ export default {
 <style scoped>
 section {
     padding-top: 7rem;
+}
+
+.my-color {
+    color: rgb(194, 203, 160)
 }
 
 @media all and (max-width: 576px) {

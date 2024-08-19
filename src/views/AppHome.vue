@@ -59,14 +59,11 @@ export default {
                                     class="card-img-top img-fluid object-fit-contain" alt="" style="height: 15rem;">
                             </figure>
                             <a :href="project.link_git" target="_blank" rel="noopener noreferrer"
-                                class="py-2 my-color fs-5">Vai alla
-                                Repository
-                                Git-Hub</a>
+                                class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
                             <div class="text-center py-2 transform">
                                 <!-- importo il link per vedere i dettagli anche sui progetti nella home -->
                                 <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                    class="btn my-btn-outline w-50">Vedi di
-                                    più</router-link>
+                                    class="btn my-btn-outline w-50">Vedi di più</router-link>
                             </div>
                         </div>
                     </div>

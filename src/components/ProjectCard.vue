@@ -55,7 +55,7 @@ export default {
                         </figure>
                         <p class="card-text my-fs p-3 m-0">{{ project.description }}</p>
                         <h6 class="card-text my-fs py-2 m-0">{{ project.type.name }}</h6>
-                        <h5 class="m-0 py-2">Linguaggi Usati:</h5>
+                        <h5 class="m-0 py-2">Linguaggi/Framework Usati:</h5>
                         <div class="row m-0 justify-content-center">
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1" v-for="language in project.languages">
                                 <i :class="language.icon"></i>

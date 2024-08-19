@@ -95,8 +95,8 @@ li:hover {
     height: 50px;
     bottom: 100px;
     right: 20px;
-    background-color: aquamarine;
-    border-color: aquamarine;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.5s;

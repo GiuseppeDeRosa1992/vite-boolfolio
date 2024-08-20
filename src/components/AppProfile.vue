@@ -24,7 +24,7 @@ export default {
     <section class="profile pb-4">
         <div class="my-p">
             <div class="row m-0 align-items-center">
-                <div class="col-12 col-sm-12 col-lg-3 p-0 ps-5 pe-3 py-3">
+                <div class="col-12 col-sm-12 col-lg-4 p-0 ps-5 pe-3 py-3">
                     <img src="../assets/foto-cv.jpg" alt="foto-profilo" class="img-thumbnail">
                     <div class="text-center pt-3">
                         <i class="fa-regular fa-envelope fa-2xl" style="color: #3d3bc4;"></i>
@@ -40,28 +40,25 @@ export default {
                         <a href="https://github.com/GiuseppeDeRosa1992" class="px-2">Profilo Git Hub</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-lg-9 p-0 ps-3 pe-5 py-3">
+                <div class="col-12 col-sm-12 col-lg-8 p-0 ps-3 pe-5 py-3">
                     <h1 class="m-0 my-fs text-center pb-2">GIUSEPPE DE ROSA</h1>
                     <div class="my-bg text-center my-fs px-4 py-5">
                         <p class="p-0 m-0 py-2">
-                            👋 Ciao! Benvenuti nel mio Sito Portfolio! Sono Giuseppe e ho 32 anni e sono di
-                            <i class="fa-solid fa-map-pin fa-lg" style="color: #e60000;"></i>
-                            Napoli ma vivo a Padova!
+                            Ciao! Benvenuti nel mio Sito Portfolio! Sono Giuseppe e ho 32 anni e sono di Napoli ma vivo
+                            a Padova! <i class="fa-solid fa-map-pin fa-lg" style="color: #e60000;"></i>
                         </p>
                         <p class="pb-2 m-0">
-                            🙋 Attualmente sono alla ricerca di un lavoro che mi sappia stimolare e mi aiuti ad
-                            arricchire il mio bagaglio da Jr. Full Stack Web Developer!
+                            Attualmente sono alla ricerca di un lavoro che mi sappia stimolare e mi aiuti ad arricchire
+                            il mio bagaglio da Jr. Full Stack Web Developer!
                         </p>
-
                         <p class="pb-2 m-0">
                             Sono, quindi, disponibile a tutto! Mi metto in gioco e ho sempre voglia di imparare nuove
                             skills!
                         </p>
-
                         <p class="pb-2 m-0">
                             <i class="fa-solid fa-hand fa-lg" style="color: #FFD43B;"></i>
                             Se siete interessati ad avere in azienda una persona motivata, dinamica, precisa e
-                            determinata, sono la persona adatta a voi! 🤗
+                            determinata, sono la persona adatta a voi!
                         </p>
 
                         <p class="pb-2 m-0">
@@ -129,6 +126,14 @@ div.my-fs {
         font-size: 4.5rem;
         padding: 0.5rem 0 0 0;
     }
+
+    div.ps-5 {
+        padding-left: 1rem !important;
+    }
+
+    div.ps-3 {
+        padding-right: 1rem !important;
+    }
 }
 
 @media all and (max-width: 576px) {
@@ -140,6 +145,14 @@ div.my-fs {
         color: rgb(194, 203, 160);
         font-size: 3.5rem;
         padding: 0.5rem 0 0 0;
+    }
+
+    div.ps-5 {
+        padding-left: 1rem !important;
+    }
+
+    div.ps-3 {
+        padding-right: 1rem !important;
     }
 }
 
@@ -156,6 +169,18 @@ div.my-fs {
 
     a {
         font-size: 0.9rem;
+    }
+
+    div.ps-5 {
+        padding-left: 1rem !important;
+    }
+
+    div.ps-3 {
+        padding-right: 1rem !important;
+    }
+
+    img.img-thumbnail {
+        margin-top: 1.5rem;
     }
 }
 </style>

@@ -25,7 +25,7 @@ export default {
         <div class="my-p">
             <div class="row m-0 align-items-center">
                 <div class="col-12 col-sm-12 col-lg-4 p-0 ps-5 pe-3 py-3">
-                    <img src="../assets/foto-cv.jpg" alt="foto-profilo" class="img-thumbnail">
+                    <img src="../assets/foto-cv.jpg" alt="foto-profilo" class="img-fluid circle">
                     <div class="text-center pt-3">
                         <i class="fa-regular fa-envelope fa-2xl" style="color: #3d3bc4;"></i>
                         <a href="mailto:derosagiuseppe1092@gmail.com" class="px-2">derosagiuseppe1092@gmail.com</a>
@@ -90,8 +90,8 @@ div.my-p {
     padding-top: 8rem;
 }
 
-div>img {
-    border-radius: 100px;
+.circle {
+    border-radius: 50%;
 }
 
 a {
@@ -185,7 +185,7 @@ div.my-fs {
         padding-right: 1rem !important;
     }
 
-    img.img-thumbnail {
+    img.img-fluid {
         margin-top: 1.5rem;
     }
 }

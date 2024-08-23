@@ -116,6 +116,10 @@ div.my-fs {
     font-size: 1.4rem;
 }
 
+
+/**************************************** MEDIA QUERY RESPONSIVE *************************************/
+
+/* DA 576PX A 992PX */
 @media all and (min-width:576px) and (max-width: 992px) {
     section.profile {
         background: linear-gradient(180deg, rgba(194, 203, 160, 1) 30%, rgba(33, 37, 41, 1) 33%);
@@ -136,6 +140,7 @@ div.my-fs {
     }
 }
 
+/* DA 451PX A 576PX */
 @media all and (max-width: 576px) {
     section.profile {
         background: linear-gradient(180deg, rgba(194, 203, 160, 1) 20%, rgba(33, 37, 41, 1) 23%);
@@ -156,6 +161,7 @@ div.my-fs {
     }
 }
 
+/* DA 0 A 450PX */
 @media all and (max-width: 450px) {
     section.profile {
         background: linear-gradient(180deg, rgba(194, 203, 160, 1) 12%, rgba(33, 37, 41, 1) 15%);

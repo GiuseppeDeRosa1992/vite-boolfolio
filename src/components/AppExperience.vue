@@ -20,7 +20,7 @@ export default {
 
 <template>
     <!-- SEZIONE COMPETENZE -->
-    <section class="experience py-4">
+    <section class="experience py-5">
         <div class="container">
             <h2 class="m-0 pb-3 fs-1">Esperienze</h2>
             <div class="row m-0" v-if="store.experience">

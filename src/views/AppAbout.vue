@@ -35,7 +35,7 @@ export default {
                     è cambiato quando un giorno in Germania dopo essermi rotto un piede ho scoperto il mondo del web
                     developing. La passione per lo sviluppo web è nata
                     quasi per caso, ma è cresciuta rapidamente. Questa nuova strada mi ha entusiasmato come nulla prima
-                    d'ora, portandomi a iscrivermi e completare un corso intensivo di 6 mesi e di 700 ore tra teoria e
+                    d'ora, portandomi ad iscrivermi e completare un corso intensivo di 6 mesi e di 700 ore tra teoria e
                     pratica in Full Stack Web Development. Ora, sono pronto a mettere in pratica le mie competenze, ad
                     imparare delle nuove e a costruire una carriera in questo campo che mi appassiona profondamente.
                 </p>

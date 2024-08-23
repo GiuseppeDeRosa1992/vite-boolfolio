@@ -50,11 +50,16 @@ const iMieiDati = reactive({
             style: "color: #3fb984",
         },
         {
-            vite: "fa-brands fa-vuejs fa-xl",
-            styleVite: "color: #639AF7",
-            icon: "fa-solid fa-bolt-lightning fa-bounce fa-xl",
+            vite: "fa-solid fa-bolt-lightning fa-2xs",
+            styleVite: "color: #ffd32b",
+            icon: "fa-brands fa-vuejs fa-bounce fa-2xl",
             name: "VITE JS",
-            style: "color: #ffd32b",
+            style: "color: #639AF7",
+        },
+        {
+            icon: "fa-brands fa-node fa-bounce fa-2xl",
+            name: "NODE JS",
+            style: "color: #72A860",
         },
         {
             icon: "fa-solid fa-database fa-bounce fa-2xl",

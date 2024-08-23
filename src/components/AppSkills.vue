@@ -51,24 +51,16 @@ h6 {
 
 .my-position {
     position: relative;
-    top: 5px;
+    top: -7.5px;
 }
 
 @media all and (min-width: 992px) {
-    div.row {
-        justify-content: space-between;
-    }
-
     h6 {
         font-size: 0.7rem;
     }
 }
 
 @media all and (min-width: 1500px) {
-    div.row {
-        justify-content: space-between;
-    }
-
     h6 {
         font-size: 1rem;
     }

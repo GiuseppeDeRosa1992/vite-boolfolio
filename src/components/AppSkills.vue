@@ -26,7 +26,11 @@ export default {
             <div class="row m-0" v-if="store.skills">
                 <template v-for="skill in store.skills">
                     <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 pt-2 text-center">
-                        <i :class=skill.icon :style=skill.style></i>
+                        <i :class=skill.icon :style=skill.style>
+                            <div>
+                                <i :class=skill.vite :style=skill.styleVite class="my-position"></i>
+                            </div>
+                        </i>
                         <h6 class="m-0 p-0 py-2">{{ skill.name }}</h6>
                     </div>
                 </template>
@@ -43,5 +47,30 @@ section.skills {
 h2,
 h6 {
     color: rgb(194, 203, 160);
+}
+
+.my-position {
+    position: relative;
+    top: 5px;
+}
+
+@media all and (min-width: 992px) {
+    div.row {
+        justify-content: space-between;
+    }
+
+    h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    div.row {
+        justify-content: space-between;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
 }
 </style>

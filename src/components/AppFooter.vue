@@ -22,12 +22,12 @@ export default {
             <!-- LINK -->
             <div class="col-12 col-sm-3 col-md-1 p-0 py-2 ps-2">
                 <i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i>
-                <a href="https://www.linkedin.com/in/giuseppe-de-rosa-2a750431b/">Profilo Linkedin</a>
+                <a href="https://www.linkedin.com/in/giuseppe-de-rosa-2a750431b/" target="_blank">Profilo Linkedin</a>
             </div>
 
             <div class="col-12 col-sm-3 col-md-1 p-0 py-2 ps-2">
                 <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
-                <a href="https://github.com/GiuseppeDeRosa1992">Profilo Git Hub</a>
+                <a href="https://github.com/GiuseppeDeRosa1992" target="_blank">Profilo Git Hub </a>
             </div>
 
             <div class="col-12 col-sm-6 col-md-10 text-end p-0 py-2 pe-2">

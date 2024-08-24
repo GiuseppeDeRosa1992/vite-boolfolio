@@ -32,12 +32,13 @@ export default {
                     </div>
                     <div class="text-center pt-3">
                         <i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i>
-                        <a href="https://www.linkedin.com/in/giuseppe-de-rosa-2a750431b/" class="px-2">Profilo
+                        <a href="https://www.linkedin.com/in/giuseppe-de-rosa-2a750431b/" target="_blank"
+                            class="px-2">Profilo
                             Linkedin</a>
                     </div>
                     <div class="text-center pt-3">
                         <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
-                        <a href="https://github.com/GiuseppeDeRosa1992" class="px-2">Profilo Git Hub</a>
+                        <a href="https://github.com/GiuseppeDeRosa1992" target="_blank" class="px-2">Profilo Git Hub</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-8 p-0 ps-3 pe-5 py-3">

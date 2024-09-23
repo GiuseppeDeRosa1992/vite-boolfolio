@@ -10,7 +10,7 @@ const iMieiDati = reactive({
     singleProject: null,
 
     api_url: "http://127.0.0.1:8000",
-    arrayLink: ["Home", "Contattami", "Progetti", "Su di me"],
+    arrayLink: ["Home", "Progetti", "Su di me"],
 
     //creo variabile per richiamare api projectslatest che mi restituisce gli ultimi 6 progetti
     latest: "/api/projects/latest",

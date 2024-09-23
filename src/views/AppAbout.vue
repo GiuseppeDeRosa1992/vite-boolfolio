@@ -22,7 +22,7 @@ export default {
     <section class="py-3">
         <!-- <h1 class="text-white">{{ title }}</h1> -->
         <div class="container pb-5">
-            <div class="px-3 py-5 my-bg rounded-5">
+            <div class="px-3 py-5 my-bg rounded-5 my-shadow">
                 <h1 class="m-0 py-2 text-dark text-center">Chi Sono?</h1>
                 <p class="m-0 fs-5">Ciao, mi chiamo Giuseppe, ho 32 anni e sono di Napoli ma vivo a Padova. Sono
                     cresciuto in Provincia di Viterbo visto che quando ero piccolo i miei genitori si sono trasferiti
@@ -69,7 +69,14 @@ export default {
                 </div>
             </div>
         </div>
+
+        <div class="text-center pt-3">
+            <a href="file/Giuseppe_De_Rosa_CV.pdf" target="_blank" class="btn btn-outline-dark transform px-2">
+                <i class="fa-regular fa-file fa-lg fa-beat"></i>
+                Scarica il mio CV</a>
+        </div>
     </section>
+
 
     <!-- Onda -->
     <div class="my-bg-green">
@@ -95,6 +102,16 @@ div.container {
 
 div.my-bg {
     background-color: white;
+}
+
+.my-shadow:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 50px rgb(0, 0, 0);
+}
+
+.transform:hover {
+    transform: scale(1.2);
+    transition: linear 0.5s;
 }
 
 /* ONDA */

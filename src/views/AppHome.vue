@@ -52,7 +52,7 @@ export default {
                 <!-- FACCIO CICLO FOR E CICLO NELLA PROPS CHE POI LA POPOLO IN APP.VUE QUANDO LA RICHIAMO -->
                 <template v-for="project in store.latestProjects">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
-                        <div class="card p-0 h-100">
+                        <div class="card p-0 h-100 my-shadow">
                             <h3 class="card-text py-3 m-0 fs-2">{{ project.title }}</h3>
                             <figure class="m-0">
                                 <img :src="store.api_url + '/storage/' + project.img_preview"
@@ -112,6 +112,11 @@ section.project,
 h2,
 .my-color {
     color: rgb(194, 203, 160);
+}
+
+.my-shadow:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px rgb(148, 160, 104);
 }
 
 div.transform:hover {

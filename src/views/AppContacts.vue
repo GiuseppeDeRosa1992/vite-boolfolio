@@ -1,59 +1,59 @@
 <script>
 
 
-import axios from 'axios';
+// import axios from 'axios';
 
 
-export default {
+// export default {
 
-    name: "AppContacts",
+//     name: "AppContacts",
 
-    data() {
-        return {
-            name: '',
-            email: '',
-            message: '',
-            errors: {},
-            loading: false,
-            success: false
-        }
-    },
-    methods: {
-        sendMessage() {
-            this.loading = true;
+//     data() {
+//         return {
+//             name: '',
+//             email: '',
+//             message: '',
+//             errors: {},
+//             loading: false,
+//             success: false
+//         }
+//     },
+//     methods: {
+//         sendMessage() {
+//             this.loading = true;
 
-            const data = {
-                'name': this.name,
-                'email': this.email,
-                'message': this.message,
-            }
-            console.log(data);
+//             const data = {
+//                 'name': this.name,
+//                 'email': this.email,
+//                 'message': this.message,
+//             }
+//             console.log(data);
 
-            this.errors = {};
-            axios
-                .post("http://127.0.0.1:8000/api/contacts", data)
-                .then(response => {
-                    console.log(response);
-                    this.success = response.data.success
-                    if (this.success) {
-                        // vedi il messaggio
-                        this.name = '';
-                        this.email = '';
-                        this.message = '';
-                    } else {
-                        // messaggio di errore
-                        this.errors = response.data.errors
-                    }
+//             this.errors = {};
+//             axios
+//                 .post("http://127.0.0.1:8000/api/contacts", data)
+//                 .then(response => {
+//                     console.log(response);
+//                     this.success = response.data.success
+//                     if (this.success) {
+//                         // vedi il messaggio
+//                         this.name = '';
+//                         this.email = '';
+//                         this.message = '';
+//                     } else {
+//                         // messaggio di errore
+//                         this.errors = response.data.errors
+//                     }
 
-                    this.loading = false;
-                })
-        }
-    }
-};
+//                     this.loading = false;
+//                 })
+//         }
+//     }
+// };
 
 </script>
 
-<template>
+<!-- <template>
     <section>
         <div class="row m-0 justify-content-center text-white">
             <div class="col-10 col-sm-8 col-md-6 p-0">
@@ -119,4 +119,4 @@ div>button:hover {
         margin: 4rem 0 1rem 0 !important;
     }
 }
-</style>
+</style> -->

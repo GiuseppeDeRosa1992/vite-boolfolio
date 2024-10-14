@@ -45,6 +45,10 @@ export default {
                         <a href="file/Giuseppe_De_Rosa_CV.pdf" target="_blank" class="px-2">Scarica il mio
                             CV</a>
                     </div>
+                    <div class="text-center pt-3">
+                        <i class="fa-regular fa-file fa-2xl" style="color: #0064f3;"></i>
+                        <a href="file/certificato-boolean.pdf" target="_blank" class="px-2">Certificato Boolean</a>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-8 p-0 ps-3 pe-5 py-3">
                     <h1 class="m-0 my-fs text-center pb-2">GIUSEPPE DE ROSA</h1>

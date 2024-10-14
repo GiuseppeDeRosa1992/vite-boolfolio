@@ -56,11 +56,11 @@ const iMieiDati = reactive({
             name: "VITE JS",
             style: "color: #639AF7",
         },
-        {
-            icon: "fa-brands fa-node fa-bounce fa-2xl",
-            name: "NODE JS",
-            style: "color: #72A860",
-        },
+        // {
+        //     icon: "fa-brands fa-node fa-bounce fa-2xl",
+        //     name: "NODE JS",
+        //     style: "color: #72A860",
+        // },
         {
             icon: "fa-solid fa-database fa-bounce fa-2xl",
             name: "MY SQL",

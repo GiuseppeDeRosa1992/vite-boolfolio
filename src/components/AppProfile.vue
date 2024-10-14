@@ -51,7 +51,12 @@ export default {
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-8 p-0 ps-3 pe-5 py-3">
-                    <h1 class="m-0 my-fs text-center pb-2">GIUSEPPE DE ROSA</h1>
+                    <h1 class="m-0 my-fs text-center">GIUSEPPE DE ROSA</h1>
+                    <h4 class="m-0 text-center py-2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        JUNIOR FULL STACK WEB DEVELOPER
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </h4>
                     <div class="my-bg text-center my-fs px-4 py-5">
                         <p class="p-0 m-0 py-2">
                             Ciao! Benvenuti nel mio Sito Portfolio! Sono Giuseppe e ho 32 anni e sono di Napoli ma vivo
@@ -119,7 +124,7 @@ div.my-bg {
 }
 
 h1.my-fs {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 div.my-fs {

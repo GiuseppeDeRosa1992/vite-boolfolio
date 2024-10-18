@@ -97,10 +97,6 @@ export default {
 </template>
 
 <style scoped>
-section.profile {
-    background: linear-gradient(180deg, rgba(194, 203, 160, 1)50%, rgba(33, 37, 41, 1) 55%);
-}
-
 div.my-p {
     padding-top: 8rem;
 }
@@ -133,6 +129,13 @@ div.my-fs {
 
 
 /**************************************** MEDIA QUERY RESPONSIVE *************************************/
+/* DA 576PX A 992PX */
+@media all and (min-width:992px) {
+    section.profile {
+        background: linear-gradient(180deg, rgba(194, 203, 160, 1)50%, rgba(33, 37, 41, 1) 55%);
+    }
+}
+
 
 /* DA 576PX A 992PX */
 @media all and (min-width:576px) and (max-width: 992px) {

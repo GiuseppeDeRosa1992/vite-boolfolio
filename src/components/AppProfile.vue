@@ -132,7 +132,7 @@ div.my-fs {
 /* DA 576PX A 992PX */
 @media all and (min-width:992px) {
     section.profile {
-        background: linear-gradient(180deg, rgba(194, 203, 160, 1)50%, rgba(33, 37, 41, 1) 55%);
+        background: linear-gradient(180deg, rgba(194, 203, 160, 1) 50%, rgba(33, 37, 41, 1) 55%);
     }
 }
 

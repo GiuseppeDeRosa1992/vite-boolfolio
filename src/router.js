@@ -29,11 +29,11 @@ const router = createRouter({
             component: AppProjects
         },
 
-        // {
-        //     path: "/contacts",
-        //     name: "Contattami",
-        //     component: AppContacts
-        // },
+        {
+            path: "/contacts",
+            name: "Contattami",
+            component: AppContacts
+        },
         {
             path: "/projects/:slug",
             name: "project",

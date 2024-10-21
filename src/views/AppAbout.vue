@@ -26,7 +26,7 @@ export default {
                 <h1 class="m-0 py-2 text-dark text-center">Chi Sono?</h1>
                 <p class="m-0 fs-5">Ciao, mi chiamo Giuseppe, ho 32 anni e sono di Napoli ma vivo a Padova. Sono
                     cresciuto in Provincia di Viterbo visto che quando ero piccolo i miei genitori si sono trasferiti
-                    li. Parlo un pò il Tedesco dato che con la mia attuale moglie e allora fidanzata abbiamo intrapreso
+                    lì. Parlo un pò il Tedesco dato che con la mia attuale moglie e allora fidanzata abbiamo intrapreso
                     un'esperienza che ci ha portato per ben 6 anni in Germania. Dopodichè siamo tornati in Italia. Mi
                     piace viaggiare, esplorare, apprendere nuove culture. Già mentre studiavo alle superiori nel
                     pomeriggio andavo a lavorare, per approcciarmi al mondo del lavoro ed essere indipendente. A 18 anni

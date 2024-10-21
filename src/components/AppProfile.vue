@@ -2,6 +2,7 @@
 
 import AppSkills from "../components/AppSkills.vue";
 import store from "../data/store.js";
+import { RouterLink } from "vue-router";
 
 export default {
 
@@ -82,10 +83,10 @@ export default {
                         </p>
 
                         <p class="pb-2 m-0">
-                            <a href="/about" class="text-decoration-underline text-dark">
+                            <router-link class="text-decoration-underline text-dark" :to="{ name: 'Su di me' }">
                                 <i class="fa-solid fa-right-long fa-beat fa-xl" style="color: #000000;"></i>
                                 <span class="px-2">Scopri di più su di me!</span>
-                            </a>
+                            </router-link>
                         </p>
                     </div>
                     <!-- SEZIONE COMPETENZE -->

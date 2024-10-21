@@ -32,7 +32,7 @@ export default {
 
             this.errors = {};
             axios
-                .post(`${this.store.api_url}api/contacts`, data)
+                .post(`${this.store.api_url}/api/contacts`, data)
                 .then(response => {
                     console.log(response);
                     this.success = response.data.success

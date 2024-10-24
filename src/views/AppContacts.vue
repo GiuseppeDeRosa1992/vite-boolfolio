@@ -17,6 +17,7 @@ export default {
             loading: false,
             success: false,
             store,
+            checkPolicy: false,
         }
     },
     methods: {
@@ -49,7 +50,12 @@ export default {
                     this.loading = false;
                 })
         }
+    },
+
+    mounted() {
+        (function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);
     }
+
 };
 
 </script>
@@ -72,7 +78,8 @@ export default {
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome</label>
                         <input type="text" class="form-control" name="name" :class="{ 'is-invalid': errors.name }"
-                            id="name" aria-describedby="text-name" placeholder="Inserisci il Nome" v-model="name">
+                            id="name" aria-describedby="text-name" placeholder="Inserisci il Nome" v-model="name"
+                            minlength="3" required>
                         <p class="text-danger" v-for="(error, index) in errors.name" :key="`name-error-${index}`">
                             {{ error }}
                         </p>
@@ -81,7 +88,8 @@ export default {
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" :class="{ 'is-invalid': errors.email }"
-                            id="email" aria-describedby="email" placeholder="Inserisci Email" v-model="email">
+                            id="email" aria-describedby="email" placeholder="Inserisci Email" v-model="email"
+                            pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" autocomplete="off" required>
                         <p class="text-danger" v-for="(error, index) in errors.name" :key="`name-error-${index}`">
                             {{ error }}
                         </p>
@@ -90,14 +98,27 @@ export default {
                     <div class="mb-3">
                         <label for="message" class="form-label">Messaggio</label>
                         <textarea class="form-control" name="message" :class="{ 'is-invalid': errors.message }"
-                            id="message" placeholder="Inserisci Messaggio" v-model="message"></textarea>
+                            id="message" placeholder="Inserisci Messaggio" v-model="message" minlength="10"
+                            required></textarea>
                         <p class="text-danger" v-for="(error, index) in errors.name" :key="`name-error-${index}`">
                             {{ error }}
                         </p>
                     </div>
 
+                    <div class="mb-3">
+                        <input type="checkbox" name="" id="" v-model="checkPolicy">
+                        <span class="text-dark"> Spunta la casella per la Privacy Policy per inviare il
+                            messaggio. </span>
+                        <a href="https://www.iubenda.com/privacy-policy/26069970"
+                            class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-decoration-none"
+                            title="Privacy Policy ">Privacy
+                            Policy
+                        </a>
+                    </div>
+
                     <div class="text-center">
-                        <button type="submit" class="btn my-btn-outline">Invia Messaggio</button>
+                        <button :disabled="checkPolicy ? disabled : ''" type="submit" class="btn my-btn-outline">Invia
+                            Messaggio</button>
                     </div>
                 </form>
             </div>

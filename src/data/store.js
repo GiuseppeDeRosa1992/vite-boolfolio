@@ -10,7 +10,7 @@ const iMieiDati = reactive({
     singleProject: null,
 
     api_url: "https://admin.giuseppederosawebdev.com",
-    arrayLink: ["Home", "Progetti", "Contattami", "Su di me"],
+    arrayLink: ["Home", "Progetti", "Su di me"], //Aggiungere "Contattami" se si rimette sezione contattami che adesso è Commentata.
 
     //creo variabile per richiamare api projectslatest che mi restituisce gli ultimi 6 progetti
     latest: "/api/projects/latest",

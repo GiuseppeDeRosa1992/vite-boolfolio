@@ -15,11 +15,11 @@ export default {
 
     methods: {
         //FUNZIONE CAMBIA PAGINA CON CHIAMATA AXIOS
-        changePage(api_url) {
-            axios.get(api_url).then((result) => {
-                this.store.projects = result.data.projects;
-            });
-        }
+        // changePage(api_url) {
+        //     axios.get(api_url).then((result) => {
+        //         this.store.projects = result.data.projects;
+        //     });
+        // }
     },
 };
 

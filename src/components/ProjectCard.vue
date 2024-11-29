@@ -1,7 +1,7 @@
 <script>
 import store from '../data/store.js';
 import axios from 'axios';
-import AppPagination from './AppPagination.vue';
+// import AppPagination from './AppPagination.vue';
 
 
 
@@ -31,7 +31,7 @@ export default {
     <div class="container">
         <h1 class="text-center py-3 m-0">{{ msg }}</h1>
 
-        <AppPagination />
+        <!-- <AppPagination /> -->
 
         <!-- FACCIO CICLO FOR E CICLO NELLA PROPS CHE POI LA POPOLO IN APP.VUE QUANDO LA RICHIAMO -->
         <!-- <div class="row text-center">
@@ -89,7 +89,7 @@ export default {
             </template>
         </div>
 
-        <AppPagination />
+        <!-- <AppPagination /> -->
     </div>
 </template>
 

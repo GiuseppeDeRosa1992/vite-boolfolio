@@ -10,7 +10,7 @@ export default {
     name: "ProjectCard",
 
     //CREO LA PROPS
-    props: ["cardProjects"], //"api_url"
+    // props: ["cardProjects"], //"api_url"
 
     //Importo il Componente di Paginazione
     components: {
@@ -68,7 +68,7 @@ export default {
 
         <div class="row text-center">
 
-            <template v-for="project in cardProjects">
+            <template v-for="project in store.projectsBoolean">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
                         <h2 class="card-text my-fs py-4">{{ project.title }}</h2>

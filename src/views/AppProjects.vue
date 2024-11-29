@@ -35,7 +35,7 @@ export default {
     <section>
         <!-- <h1 class="text-white">{{ title }}</h1> -->
         <!-- RICHIAMO LE CARD DEI PROGETTI E TRAMITE LE PROPS GLI PASSO LA API CHE MI SERVE -->
-        <ProjectCard :cardProjects="store.projectsBoolean" /> <!-- :api_url="store.api_url" -->
+        <ProjectCard /> <!-- :cardProjects="store.projectsBoolean" :api_url="store.api_url" -->
         <!-- props nuova store.projectsBoolean -->
     </section>
 </template>

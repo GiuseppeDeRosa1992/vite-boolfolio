@@ -1,10 +1,10 @@
 import { reactive } from 'vue';
 
 const iMieiDati = reactive({
-    projects: [],
+    // projects: [],
 
     //creo la variabile per la lista degli ultimi progetti
-    latestProjects: [],
+    // latestProjects: [],
 
     //creo la variabile per il singolo progetto
     singleProject: null,

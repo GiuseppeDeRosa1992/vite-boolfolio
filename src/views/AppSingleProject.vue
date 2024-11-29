@@ -1,32 +1,32 @@
-<!-- <script>
-import axios from 'axios';
-import store from '../data/store.js';
+<script>
+// import axios from 'axios';
+// import store from '../data/store.js';
 
-export default {
-    name: "AppSingleProject",
+// export default {
+//     name: "AppSingleProject",
 
-    data() {
-        return {
-            store,
-        }
-    },
+//     data() {
+//         return {
+//             store,
+//         }
+//     },
 
 
-    mounted() {
-        axios.get(`${this.store.api_url}${this.store.projectId}${this.$route.params.slug}`).then(result => {
-            //creo if che se il progetto ce me lo restituisce sennò da pagina non trovata
-            if (result.data.success) {
-                this.store.singleProject = result.data.project
-            } else {
-                this.$router.push({ name: 'not-found' })
-            }
-        })
-    }
-}
+//     mounted() {
+//         axios.get(`${this.store.api_url}${this.store.projectId}${this.$route.params.slug}`).then(result => {
+//             //creo if che se il progetto ce me lo restituisce sennò da pagina non trovata
+//             if (result.data.success) {
+//                 this.store.singleProject = result.data.project
+//             } else {
+//                 this.$router.push({ name: 'not-found' })
+//             }
+//         })
+//     }
+// }
 </script>
 
 <template>
-    <section>
+    <!-- <section>
         <div class="container mt-3">
             <div class="card p-0 h-100 text-center" v-if="store.singleProject">
                 <figure class="m-0">
@@ -51,11 +51,11 @@ export default {
                     class="py-2 my-color fs-5">Vai alla repository Git-Hub</a>
             </div>
         </div>
-    </section>
+    </section> -->
 </template>
 
 <style scoped>
-section {
+/* section {
     padding-top: 7rem;
 }
 
@@ -67,5 +67,5 @@ section {
     section {
         padding-top: 10rem;
     }
-}
-</style> -->
+} */
+</style>

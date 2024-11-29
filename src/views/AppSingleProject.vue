@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import axios from 'axios';
 import store from '../data/store.js';
 
@@ -68,4 +68,4 @@ section {
         padding-top: 10rem;
     }
 }
-</style>
+</style> -->

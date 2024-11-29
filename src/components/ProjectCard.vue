@@ -10,7 +10,7 @@ export default {
     name: "ProjectCard",
 
     //CREO LA PROPS
-    props: ["cardProjects", "api_url"],
+    props: ["cardProjects"], //"api_url"
 
     //Importo il Componente di Paginazione
     components: {
@@ -33,8 +33,8 @@ export default {
 
         <AppPagination />
 
-        <div class="row text-center">
-            <!-- FACCIO CICLO FOR E CICLO NELLA PROPS CHE POI LA POPOLO IN APP.VUE QUANDO LA RICHIAMO -->
+        <!-- FACCIO CICLO FOR E CICLO NELLA PROPS CHE POI LA POPOLO IN APP.VUE QUANDO LA RICHIAMO -->
+        <!-- <div class="row text-center">
             <template v-for="project in cardProjects">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
@@ -64,22 +64,21 @@ export default {
                     </div>
                 </div>
             </template>
-        </div>
+</div> -->
 
-        <!-- <div class="row text-center">
-            
+        <div class="row text-center">
+
             <template v-for="project in cardProjects">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
                         <h2 class="card-text my-fs py-4">{{ project.title }}</h2>
                         <figure class="m-0">
-                            <img :src="project.image"
-                                class="card-img-top img-fluid object-fit-contain" :alt="project.image"
-                                style="height: 15rem;">
+                            <img :src="project.image" class="card-img-top img-fluid object-fit-contain"
+                                :alt="project.image" style="height: 15rem;">
                         </figure>
                         <p class="card-text my-fs p-3 m-0">{{ project.description }}</p>
                         <h5 class="m-0 py-2">Linguaggi/Framework Usati:</h5>
-                        <div class="row m-0 justify-content-center"> 
+                        <div class="row m-0 justify-content-center">
                             <h4 class="m-0 p-2">{{ project.languageUsed }}</h4>
                         </div>
 
@@ -88,7 +87,7 @@ export default {
                     </div>
                 </div>
             </template>
-        </div> -->
+        </div>
 
         <AppPagination />
     </div>

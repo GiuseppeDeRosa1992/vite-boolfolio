@@ -9,14 +9,14 @@ const iMieiDati = reactive({
     //creo la variabile per il singolo progetto
     singleProject: null,
 
-    api_url: "https://admin.giuseppederosawebdev.com",
+    // Chiamata api non mi serve più api_url: "https://admin.giuseppederosawebdev.com",
     arrayLink: ["Home", "Progetti", "Su di me"], //Aggiungere "Contattami" se si rimette sezione contattami che adesso è Commentata.
 
     //creo variabile per richiamare api projectslatest che mi restituisce gli ultimi 6 progetti
-    latest: "/api/projects/latest",
+    // latest: "/api/projects/latest",
 
     //creo variabile per richiamare api per dettagli che mi passa l'id
-    projectId: "/api/projects/",
+    // projectId: "/api/projects/",
 
     skills: [
         {

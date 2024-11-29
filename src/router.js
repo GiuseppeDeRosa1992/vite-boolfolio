@@ -34,11 +34,11 @@ const router = createRouter({
         //     name: "Contattami",
         //     component: AppContacts
         // },
-        {
-            path: "/projects/:slug",
-            name: "project",
-            component: AppSingleProject
-        },
+        // {
+        //     path: "/projects/:slug",
+        //     name: "project",
+        //     component: AppSingleProject
+        // },
         {
             path: "/:pathMatch(.*)*",
             name: "not-found",

@@ -66,6 +66,30 @@ export default {
             </template>
         </div>
 
+        <!-- <div class="row text-center">
+            
+            <template v-for="project in cardProjects">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
+                    <div class="card p-0 h-100 my-shadow">
+                        <h2 class="card-text my-fs py-4">{{ project.title }}</h2>
+                        <figure class="m-0">
+                            <img :src="project.image"
+                                class="card-img-top img-fluid object-fit-contain" :alt="project.image"
+                                style="height: 15rem;">
+                        </figure>
+                        <p class="card-text my-fs p-3 m-0">{{ project.description }}</p>
+                        <h5 class="m-0 py-2">Linguaggi/Framework Usati:</h5>
+                        <div class="row m-0 justify-content-center"> 
+                            <h4 class="m-0 p-2">{{ project.languageUsed }}</h4>
+                        </div>
+
+                        <a :href="project.linkGitHub" target="_blank" rel="noopener noreferrer"
+                            class="py-2 my-color fs-5">Vai alla repository Git-Hub</a>
+                    </div>
+                </div>
+            </template>
+        </div> -->
+
         <AppPagination />
     </div>
 </template>

@@ -14,7 +14,7 @@ export default {
 
     //Importo il Componente di Paginazione
     components: {
-        AppPagination,
+        // AppPagination,
     },
 
     data() {

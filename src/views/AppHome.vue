@@ -68,41 +68,6 @@ export default {
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
-                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[3].title }}</h3>
-                        <figure class="m-0">
-                            <img :src="store.projectsBoolean[3].image" class="card-img-top img-fluid object-fit-contain"
-                                :alt="store.projectsBoolean[3].title" style="height: 15rem;">
-                        </figure>
-                        <a :href="store.projectsBoolean[3].linkGitHub" target="_blank" rel="noopener noreferrer"
-                            class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
-                        <div class="text-center py-2 transform">
-
-                            <!-- <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                    class="btn my-btn-outline w-50">Vedi di più</router-link> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
-                    <div class="card p-0 h-100 my-shadow">
-                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[10].title }}</h3>
-                        <figure class="m-0">
-                            <img :src="store.projectsBoolean[10].image"
-                                class="card-img-top img-fluid object-fit-contain" :alt="store.projectsBoolean[10].title"
-                                style="height: 15rem;">
-                        </figure>
-                        <a :href="store.projectsBoolean[10].linkGitHub" target="_blank" rel="noopener noreferrer"
-                            class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
-                        <div class="text-center py-2 transform">
-
-                            <!-- <router-link :to="{ name: 'project', params: { slug: project.slug } }"
-                                    class="btn my-btn-outline w-50">Vedi di più</router-link> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
-                    <div class="card p-0 h-100 my-shadow">
                         <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[4].title }}</h3>
                         <figure class="m-0">
                             <img :src="store.projectsBoolean[4].image" class="card-img-top img-fluid object-fit-contain"
@@ -120,13 +85,13 @@ export default {
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
-                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[15].title }}</h3>
+                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[11].title }}</h3>
                         <figure class="m-0">
-                            <img :src="store.projectsBoolean[15].image"
-                                class="card-img-top img-fluid object-fit-contain" :alt="store.projectsBoolean[15].title"
+                            <img :src="store.projectsBoolean[11].image"
+                                class="card-img-top img-fluid object-fit-contain" :alt="store.projectsBoolean[11].title"
                                 style="height: 15rem;">
                         </figure>
-                        <a :href="store.projectsBoolean[15].linkGitHub" target="_blank" rel="noopener noreferrer"
+                        <a :href="store.projectsBoolean[11].linkGitHub" target="_blank" rel="noopener noreferrer"
                             class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
                         <div class="text-center py-2 transform">
 
@@ -138,12 +103,47 @@ export default {
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
-                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[6].title }}</h3>
+                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[5].title }}</h3>
                         <figure class="m-0">
-                            <img :src="store.projectsBoolean[6].image" class="card-img-top img-fluid object-fit-contain"
-                                :alt="store.projectsBoolean[6].title" style="height: 15rem;">
+                            <img :src="store.projectsBoolean[5].image" class="card-img-top img-fluid object-fit-contain"
+                                :alt="store.projectsBoolean[5].title" style="height: 15rem;">
                         </figure>
-                        <a :href="store.projectsBoolean[6].linkGitHub" target="_blank" rel="noopener noreferrer"
+                        <a :href="store.projectsBoolean[5].linkGitHub" target="_blank" rel="noopener noreferrer"
+                            class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
+                        <div class="text-center py-2 transform">
+
+                            <!-- <router-link :to="{ name: 'project', params: { slug: project.slug } }"
+                                    class="btn my-btn-outline w-50">Vedi di più</router-link> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
+                    <div class="card p-0 h-100 my-shadow">
+                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[16].title }}</h3>
+                        <figure class="m-0">
+                            <img :src="store.projectsBoolean[16].image"
+                                class="card-img-top img-fluid object-fit-contain" :alt="store.projectsBoolean[16].title"
+                                style="height: 15rem;">
+                        </figure>
+                        <a :href="store.projectsBoolean[16].linkGitHub" target="_blank" rel="noopener noreferrer"
+                            class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
+                        <div class="text-center py-2 transform">
+
+                            <!-- <router-link :to="{ name: 'project', params: { slug: project.slug } }"
+                                    class="btn my-btn-outline w-50">Vedi di più</router-link> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
+                    <div class="card p-0 h-100 my-shadow">
+                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[7].title }}</h3>
+                        <figure class="m-0">
+                            <img :src="store.projectsBoolean[7].image" class="card-img-top img-fluid object-fit-contain"
+                                :alt="store.projectsBoolean[7].title" style="height: 15rem;">
+                        </figure>
+                        <a :href="store.projectsBoolean[7].linkGitHub" target="_blank" rel="noopener noreferrer"
                             class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
                         <div class="text-center py-2 transform">
 

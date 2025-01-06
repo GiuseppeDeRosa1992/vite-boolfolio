@@ -152,6 +152,13 @@ const iMieiDati = reactive({
 
     projectsBoolean: [
         {
+            title: "DeliveRoo",
+            image: "https://github.com/GiuseppeDeRosa1992/immagini-portfolio/blob/main/deliveroo.png?raw=true",
+            description: "Il progetto prevede la replica della piattaforma di delivery food DeliveRoo. Progetto Full-Stack con Front-End che permette al visitatore di ordinari dai suoi ristoranti preferiti con pagamento Online tramite Braintree. Back-End per i ristoratori con dashboard personalizzata nella quale creare, modificare ed eliminare i loro prodotti. In più le statistiche degli ordini per ogni ristorante",
+            languageUsed: "Html, Css, Bootstrap, JavaScript, VueJs, Vite, Php, Laravel, MySql",
+            linkGitHub: "https://github.com/GiuseppeDeRosa1992/deliveRoo-back",
+        },
+        {
             title: "My Portfolio",
             image: "https://github.com/GiuseppeDeRosa1992/immagini-portfolio/blob/main/portfolio.jpg?raw=true",
             description: "Il progetto prevede la realizzazione del sito Web del mio Portfolio personale. Troviamo vari link che portano a pagine diverse tramite delle rotte. La pagina 'Home' dove troviamo la sezione con foto, dati personali, piccola presentazione e link che portano agli account Github, Linkedin e invio mail. Poi sotto abbiamo alcuni dei progetti sviluppati fino ad adesso con immagine, titolo, link che reindirizza ad un'altra pagina nel browser alla repository Github e un bottone che cliccato fa vedere i dettagli del progetto. Ed infine troviamo la sezione per le esperienze lavorative e per la formazione che cliccate si aprono mostrando i dettagli. Nella pagina 'Progetti' invece troviamo tutti i progetti realizzati fino a questo momento dal più recente al più vecchio, con relativa immagine, link per la repository Github e bottone per vedere più dettagli. Ed Infine nella pagina 'Su di Me' troviamo informazioni più dettagliate su di me.",

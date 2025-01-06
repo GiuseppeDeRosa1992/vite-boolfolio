@@ -85,6 +85,13 @@ const iMieiDati = reactive({
 
     experience: [
         {
+            position: "Web Developer",
+            agency: "Traversari Digital Strategies",
+            date: "Novembre 2024 - Presente",
+            description: "Acquisite competenze in WordPress, PrestaShop e Looker Studio per sviluppo web, gestione e creazione di report analitici.",
+            city: "Marcon, Italia"
+        },
+        {
             position: "Jr. Full Stack Web Developer Trainee",
             agency: "Boolean",
             date: "Febbraio 2024 - Settembre 2024",

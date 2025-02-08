@@ -93,8 +93,8 @@ li:hover {
     position: fixed;
     width: 50px;
     height: 50px;
-    bottom: 100px;
-    right: 20px;
+    bottom: 130px;
+    right: 10px;
     background-color: whitesmoke;
     border-color: whitesmoke;
     border-radius: 50%;
@@ -112,8 +112,8 @@ li:hover {
 }
 
 .btnScrollToTop.active {
-    bottom: 100px;
-    right: 20px;
+    bottom: 140px;
+    right: 10px;
     opacity: 1;
     z-index: 1000;
 }

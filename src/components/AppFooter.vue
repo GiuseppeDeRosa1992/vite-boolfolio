@@ -28,13 +28,15 @@ export default {
         <div class="row m-0 justify-content-between align-items-center py-3">
             <!-- LINK -->
             <div class="col-12 col-sm-2 col-md-2 p-0 py-2 ps-2">
-                <i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i>
-                <a href="https://www.linkedin.com/in/giuseppe-de-rosa-2a750431b/" target="_blank">Profilo Linkedin</a>
-            </div>
-
-            <div class="col-12 col-sm-2 col-md-2 p-0 py-2 ps-2">
-                <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
-                <a href="https://github.com/GiuseppeDeRosa1992" target="_blank">Profilo Git Hub </a>
+                <div class="py-2">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i>
+                    <a href="https://www.linkedin.com/in/giuseppe-de-rosa-2a750431b/" target="_blank">Profilo
+                        Linkedin</a>
+                </div>
+                <div class="py-2">
+                    <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+                    <a href="https://github.com/GiuseppeDeRosa1992" target="_blank">Profilo Git Hub </a>
+                </div>
             </div>
 
             <div class="col-12 col-sm-1 col-md-4 p-0 py-2 ps-2 text-center">

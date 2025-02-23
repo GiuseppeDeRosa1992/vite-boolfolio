@@ -77,6 +77,11 @@ const iMieiDati = reactive({
             style: "color: #ef281b",
         },
         {
+            icon: "fa-brands fa-wordpress fa-bounce fa-2xl",
+            name: "WORDPRESS",
+            style: "color:rgb(53, 101, 133)",
+        },
+        {
             icon: "fa-brands fa-github fa-bounce fa-2xl",
             name: "GIT HUB",
             style: "color: #777bb3",

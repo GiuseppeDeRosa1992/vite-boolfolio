@@ -25,13 +25,13 @@ export default {
             <h2 class="m-0 pb-3 fs-1">Competenze</h2>
             <div class="row m-0" v-if="store.skills">
                 <template v-for="skill in store.skills">
-                    <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 pt-2 text-center">
-                        <i :class=skill.icon :style=skill.style>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-0 pt-2 text-center">
+                        <i class="pt-4" :class=skill.icon :style=skill.style>
                             <div>
                                 <i :class=skill.vite :style=skill.styleVite class="my-position"></i>
                             </div>
                         </i>
-                        <h6 class="m-0 p-0 py-2">{{ skill.name }}</h6>
+                        <h6 class="m-0 p-0 py-1">{{ skill.name }}</h6>
                     </div>
                 </template>
             </div>

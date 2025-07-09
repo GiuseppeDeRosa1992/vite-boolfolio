@@ -68,12 +68,12 @@ export default {
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
-                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[4].title }}</h3>
+                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[1].title }}</h3>
                         <figure class="m-0">
-                            <img :src="store.projectsBoolean[4].image" class="card-img-top img-fluid object-fit-contain"
-                                :alt="store.projectsBoolean[4].title" style="height: 15rem;">
+                            <img :src="store.projectsBoolean[1].image" class="card-img-top img-fluid object-fit-contain"
+                                :alt="store.projectsBoolean[1].title" style="height: 15rem;">
                         </figure>
-                        <a :href="store.projectsBoolean[4].linkGitHub" target="_blank" rel="noopener noreferrer"
+                        <a :href="store.projectsBoolean[1].linkGitHub" target="_blank" rel="noopener noreferrer"
                             class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
                         <div class="text-center py-2 transform">
 
@@ -120,13 +120,12 @@ export default {
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 py-3">
                     <div class="card p-0 h-100 my-shadow">
-                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[16].title }}</h3>
+                        <h3 class="card-text py-3 m-0 fs-2">{{ store.projectsBoolean[4].title }}</h3>
                         <figure class="m-0">
-                            <img :src="store.projectsBoolean[16].image"
-                                class="card-img-top img-fluid object-fit-contain" :alt="store.projectsBoolean[16].title"
-                                style="height: 15rem;">
+                            <img :src="store.projectsBoolean[4].image" class="card-img-top img-fluid object-fit-contain"
+                                :alt="store.projectsBoolean[4].title" style="height: 15rem;">
                         </figure>
-                        <a :href="store.projectsBoolean[16].linkGitHub" target="_blank" rel="noopener noreferrer"
+                        <a :href="store.projectsBoolean[4].linkGitHub" target="_blank" rel="noopener noreferrer"
                             class="py-2 my-color fs-5">Vai alla Repository Git-Hub</a>
                         <div class="text-center py-2 transform">
 

@@ -90,9 +90,16 @@ const iMieiDati = reactive({
 
     experience: [
         {
+            position: "Back-End Developer",
+            agency: "Web Industries",
+            date: "Aprile 2025 - Presente",
+            description: "Sviluppo e manutenzione gestionale aziendale: fix bug, creazione nuovo codice PHP per esigenze clienti.",
+            city: "Brugine, Italia"
+        },
+        {
             position: "Web Developer",
             agency: "Traversari Digital Strategies",
-            date: "Novembre 2024 - Presente",
+            date: "Novembre 2024 - Marzo 2025",
             description: "Acquisite competenze in WordPress, PrestaShop e Looker Studio per sviluppo web, gestione e creazione di report analitici.",
             city: "Marcon, Italia"
         },

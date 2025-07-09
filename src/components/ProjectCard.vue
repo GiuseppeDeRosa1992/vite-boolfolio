@@ -80,14 +80,14 @@ export default {
                                 :alt="myproject.title" style="height: 15rem;">
                         </figure>
                         <p class="card-text my-fs p-3 m-0">{{ myproject.description }}</p>
-                        <h5 class="m-0 py-2">Linguaggi/Framework Usati:</h5>
+                        <h6 class="m-0 py-2">Linguaggi/Framework/Piattaforme Usati:</h6>
                         <div class="row m-0 justify-content-center">
                             <h4 class="m-0 p-2">{{ myproject.languageUsed }}</h4>
                         </div>
 
                         <a :href="myproject.linkGitHub" target="_blank" rel="noopener noreferrer"
                             class="py-2 my-color fs-5">Vai alla
-                            repository Git-Hub</a>
+                            repository Git-Hub / Sito</a>
                     </div>
                 </div>
             </template>

@@ -171,6 +171,13 @@ const iMieiDati = reactive({
 
     projectsBoolean: [
         {
+            title: "Sito Web",
+            image: "https://github.com/GiuseppeDeRosa1992/immagini-portfolio/blob/main/sito_capricci.png?raw=true",
+            description: "Sito vetrina realizzato per una web designer, con particolare attenzione alla presentazione del portfolio, dove i suoi potenziali clienti possono esplorare facilmente i suoi progetti e apprezzare la qualità del suo design.",
+            languageUsed: "Wordpress, Html, Css, Php",
+            linkGitHub: "https://capriccigrafici.it/",
+        },
+        {
             title: "DeliveRoo",
             image: "https://github.com/GiuseppeDeRosa1992/immagini-portfolio/blob/main/deliveroo.png?raw=true",
             description: "Il progetto prevede la replica della piattaforma di delivery food DeliveRoo. Progetto Full-Stack con Front-End che permette al visitatore di ordinari dai suoi ristoranti preferiti con pagamento Online tramite Braintree. Back-End per i ristoratori con dashboard personalizzata nella quale creare, modificare ed eliminare i loro prodotti. In più le statistiche degli ordini per ogni ristorante",
